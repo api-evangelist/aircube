@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aircube/main/json-schema/aircube-post-api-v3-qwen-image-edit2511-image-editing-request-schema.json",
+  "title": "PostApiV3QwenImageEdit2511ImageEditingRequest",
+  "x-generated": "2026-09-25",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/aircube-openapi-generated.yml#/components/schemas/PostApiV3QwenImageEdit2511ImageEditingRequest",
+  "type": "object",
+  "properties": {
+    "prompt": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

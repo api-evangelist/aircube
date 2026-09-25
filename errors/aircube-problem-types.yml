@@ -1,0 +1,10 @@
+generated: 2026-09-25
+method: searched
+source: https://aircube.ai/docs/api-reference/error-codes
+format: json
+problems:
+  - status: 400
+    title: VALIDATION_ERROR
+    type: validation_error
+    description: Invalid JSON body
+    remediation: Ensure request body conforms to schema

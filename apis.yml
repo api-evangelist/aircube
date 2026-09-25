@@ -1,23 +1,125 @@
 aid: aircube
+
 name: AirCube
-description: 'AirCube is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://aircube.ai/opengraph-image
+
+description: AirCube provides a unified API platform that gives developers access to over 450 AI models across image, video, audio, and text domains.
+  Through a single REST endpoint and API key, users can generate media, synthesize speech, and run advanced model inference without managing multiple
+  vendor integrations. The service offers free tier access, transparent usage‑based pricing, and enterprise features such as high‑availability
+  scaling and dedicated support.
+
 url: https://raw.githubusercontent.com/api-evangelist/aircube/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
-- Company
-apis: []
+- AI
+- Platform
+- API
+- MediaGeneration
+- UnifiedAPI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/aircube-plans-pricing.yml
+- type: Spectral
+  url: rules/aircube-rules.yml
+- type: JSONLD
+  url: json-ld/aircube-context.jsonld
+- type: Vocabulary
+  url: vocabulary/aircube-vocabulary.yml
+- type: DataModel
+  url: data-model/aircube-data-model.yml
+- type: Authentication
+  url: authentication/aircube-authentication.yml
+- type: ErrorCatalog
+  url: errors/aircube-problem-types.yml
+- type: Conformance
+  url: conformance/aircube-conformance.yml
+- type: LLMsTxt
+  url: llms/aircube-llms.txt
+- type: Hosts
+  url: hosts/aircube-hosts.yml
+- type: Vendors
+  url: vendors/aircube-vendors.yml
+- type: DomainSecurity
+  url: security/aircube-domain-security.yml
 - type: Website
   url: https://aircube.ai/
+- type: Documentation
+  url: https://aircube.ai/docs
+- type: DeveloperPortal
+  url: https://aircube.ai/docs
+- type: APIReference
+  url: https://aircube.ai/docs/api-reference/submit-generation
+- type: GettingStarted
+  url: https://aircube.ai/docs/getting-started/overview
+- type: Pricing
+  url: https://aircube.ai/pricing
+- type: Blog
+  url: https://aircube.ai/blog
+- type: TermsOfService
+  url: https://aircube.ai/legal/terms
+- type: PrivacyPolicy
+  url: https://aircube.ai/legal/privacy-policy
+- type: SignUp
+  url: https://aircube.ai/login
+
+apis:
+- name: AirCube API
+  description: Unified REST API for AI model generation, image, video, audio, and text. Provides endpoints for model listing, generation submission,
+    result polling, face swap, moderation, and error codes.
+  humanURL: https://aircube.ai/docs/api-reference/submit-generation
+  baseURL: https://api.aircube.ai
+  aid: aircube:aircube-api-2
+- aid: aircube:aircube-api
+  name: AirCube API
+  description: 'AirCube API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist (2026-09-25); not
+
+    the provider''s own document.'
+  humanURL: https://aircube.ai/docs/guides/reference-media
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/aircube-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-v3-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-qwen-image-edit2511-image-editing-request-schema.json
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-v3-id-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API documentation pages are rendered as HTML with no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://aircube.ai/docs/api-reference/submit-generation
+    status: 200
+  - url: https://api.aircube.ai/openapi.json
+    status: 0
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 19
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

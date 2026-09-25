@@ -1,0 +1,24 @@
+# Docs
+
+- [Documentation](/docs): Learn how to use AirCube — one unified REST API to run 87+ AI models for images, video, audio, and more.
+- Getting Started
+  - [Overview](/docs/getting-started/overview): Understand how the AirCube API works and get started in minutes.
+  - [Authentication](/docs/getting-started/authentication): How to authenticate with the AirCube API using API keys.
+  - [Quickstart](/docs/getting-started/quickstart): End-to-end examples for image, video, and audio generation with the AirCube API.
+- API Reference
+  - [List Models](/docs/api-reference/list-models): Discover all available AI models, their supported tasks, and starting prices.
+  - [Submit Generation](/docs/api-reference/submit-generation): Submit an AI generation request to the AirCube API.
+  - [Get Result](/docs/api-reference/get-result): Poll for the status and output of a generation request.
+  - [Face Swap API](/docs/api-reference/face-swap): Detect faces and swap them in images and videos using the AirCube API.
+  - [Moderation API](/docs/api-reference/moderation): Check whether an image or video contains NSFW content, in a single synchronous call.
+  - [Error Codes](/docs/api-reference/error-codes): Error response format and error code reference for the AirCube API.
+- Core Concepts
+  - [Models](/docs/core-concepts/models): All available AI models on AirCube with their slugs, tasks, and pricing.
+  - [Async Polling](/docs/core-concepts/async-polling): How the asynchronous submit-and-poll pattern works in the AirCube API.
+  - [Billing & Credits](/docs/core-concepts/billing-and-credits): How billing, credits, and pricing work in the AirCube API.
+- Guides
+  - [Image Generation](/docs/guides/image-generation): Generate and edit images with the AirCube API.
+  - [Video Generation](/docs/guides/video-generation): Generate videos from text or images with the AirCube API.
+  - [Audio Generation](/docs/guides/audio-generation): Synthesize speech and generate music with the AirCube API.
+  - [Face Swap Guide](/docs/guides/face-swap-guide): Complete tutorial for swapping faces in images and videos with the AirCube API.
+  - [Reference Media](/docs/guides/reference-media): Use reference images, videos, and audio to guide AI generation with the AirCube API.

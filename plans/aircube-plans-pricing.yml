@@ -1,0 +1,19 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://aircube.ai/pricing
+sources:
+- https://aircube.ai/pricing
+- https://aircube.ai/docs/core-concepts/models
+- https://aircube.ai/docs/core-concepts/billing-and-credits
+name: AirCube pricing
+audience: business-product
+pricing_basis: usage-other
+plans:
+- name: Free
+  price_text: Start building for free
+  description: Free credits to start building
+- name: Enterprise
+  price_text: Contact sales
+  description: Custom deployment, higher limits, dedicated support
+docs: https://aircube.ai/pricing

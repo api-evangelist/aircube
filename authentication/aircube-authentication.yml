@@ -1,0 +1,19 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://aircube.ai/docs/getting-started/authentication
+sources:
+- https://aircube.ai/docs/getting-started/authentication
+- https://aircube.ai/docs/getting-started/overview
+- https://aircube.ai/docs/getting-started/quickstart
+description: Authentication via API keys
+schemes:
+- type: apiKey
+  name: Authorization
+  evidence: All AirCube API requests require authentication via an API key passed as a Bearer token.
+  location: header
+  header: Authorization
+  how_to_obtain: Create an API key in the AirCube dashboard (API Keys page) after signing up; the key starts with the prefix sk- and is provided
+    only once.
+note: No OAuth2, http-bearer, http-basic, jwt, hmac, mtls, or other schemes are documented.
+docs: https://aircube.ai/docs/getting-started/authentication
