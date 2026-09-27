@@ -85,28 +85,60 @@ common:
 
 apis:
 - name: AirCube API
-  description: Unified REST API for AI model generation, image, video, audio, and text. Provides endpoints for model listing, generation submission,
-    result polling, face swap, moderation, and error codes.
+  description: >-
+    Unified REST API for AI model generation, image, video, audio, and text. Provides endpoints for model
+    listing, generation submission, result polling, face swap, moderation, and error codes.
   humanURL: https://aircube.ai/docs/api-reference/submit-generation
   baseURL: https://api.aircube.ai
   aid: aircube:aircube-api-2
-- aid: aircube:aircube-api
-  name: AirCube API
-  description: 'AirCube API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist (2026-09-25); not
-
-    the provider''s own document.'
-  humanURL: https://aircube.ai/docs/guides/reference-media
+- aid: aircube:aircube-aircube-api-api
+  name: AirCube AirCube API
+  description: The AirCube API API from AirCube — 1 operation(s) for aircube api.
+  humanURL: https://aircube.ai/docs/api-reference/submit-generation
+  baseURL: https://api.aircube.ai
+  tags:
+  - AirCube API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/aircube-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/aircube-aircube-api-api-openapi.yml
   - type: JSONSchema
     url: json-schema/aircube-post-api-v3-v3-id-request-schema.json
   - type: JSONSchema
     url: json-schema/aircube-post-api-v3-qwen-image-edit2511-image-editing-request-schema.json
   - type: JSONSchema
     url: json-schema/aircube-post-api-v3-v3-id-response-schema.json
-
+- aid: aircube:aircube-models-api
+  name: AirCube Models API
+  description: The Models API from AirCube — 2 operation(s) for models.
+  humanURL: https://aircube.ai/docs/api-reference/submit-generation
+  baseURL: https://api.aircube.ai
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/aircube-models-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-v3-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-qwen-image-edit2511-image-editing-request-schema.json
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-v3-id-response-schema.json
+- aid: aircube:aircube-qwen-image-api
+  name: AirCube Qwen Image API
+  description: The Qwen Image API from AirCube — 1 operation(s) for qwen image.
+  humanURL: https://aircube.ai/docs/api-reference/submit-generation
+  baseURL: https://api.aircube.ai
+  tags:
+  - Qwen Image
+  properties:
+  - type: OpenAPI
+    url: openapi/aircube-qwen-image-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-v3-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-qwen-image-edit2511-image-editing-request-schema.json
+  - type: JSONSchema
+    url: json-schema/aircube-post-api-v3-v3-id-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

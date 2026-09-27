@@ -1,0 +1,85 @@
+openapi: 3.2.0
+info:
+  title: AirCube API
+  version: '2026-09-25'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-25: 4 operation(s) read from 12 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; AirCube has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 13
+    documentation: -9
+    pages-with-code: 12
+    pages-read: 12
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-25'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://aircube.ai/docs/guides/reference-media
+  - https://aircube.ai/docs/api-reference/face-swap
+  - https://aircube.ai/docs/api-reference/get-result
+  - https://aircube.ai/docs/api-reference/moderation
+  - https://aircube.ai/docs/api-reference/list-models
+  - https://aircube.ai/docs/api-reference/submit-generation
+  - https://aircube.ai/docs
+  - https://aircube.ai/docs/guides/face-swap-guide
+  - https://aircube.ai/docs/guides/audio-generation
+  - https://aircube.ai/docs/guides/image-generation
+  - https://aircube.ai/docs/guides/video-generation
+  - https://aircube.ai/docs/getting-started/quickstart
+security:
+- bearer: []
+tags:
+- name: AirCube API
+paths:
+  /api/v3/{v3id}:
+    post:
+      operationId: post_api_v3_v3id
+      tags:
+      - AirCube API
+      summary: POST /api/v3/face-swap
+      x-source: https://aircube.ai/docs/api-reference/face-swap
+      parameters:
+      - name: v3id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV3V3IdRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV3V3IdResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -X POST https://aircube.ai/api/v3/face-swap  -H \"Authorization: Bearer $AIRCUBE_API_KEY \"  -H \"Content-Type: application/json\"  -d '{ \n \"source_face_url\": \"https://assets.aircube.dev/cropped-face-1.jpg\", \n \"target_media\": \"https://example.com/target-video.mp4\" \n }' "
+        collapsed_from: 2 example path(s) differing only at v3Id
+components:
+  schemas:
+    PostApiV3V3IdResponse:
+      type: object
+      properties:
+        text:
+          type: string
+        policy:
+          type: string
+    PostApiV3V3IdRequest:
+      type: object
+      properties:
+        source_face_url:
+          type: string
+        target_media:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

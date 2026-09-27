@@ -1,0 +1,25 @@
+{
+  "provider": "aircube",
+  "sources": [
+    "_ae-authored/aircube-openapi-generated.yml"
+  ],
+  "outputs": [
+    "aircube-aircube-api-api-openapi.yml",
+    "aircube-models-api-openapi.yml",
+    "aircube-qwen-image-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "aircube-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "aircube-openapi-generated.yml: tagged paths GET /api/v3/models -> Models",
+    "aircube-openapi-generated.yml: tagged paths POST /api/v3/qwen-image/edit-2511/image-editing -> Qwen Image",
+    "aircube-openapi-generated.yml: tagged paths POST /api/v3/{v3id} -> AirCube API",
+    "aircube-openapi-generated.yml: declared missing tag: AirCube API",
+    "aircube-openapi-generated.yml: declared missing tag: Qwen Image",
+    "apis.yml register: written (+3 apis, 4 total)"
+  ],
+  "skipped": []
+}

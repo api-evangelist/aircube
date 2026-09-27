@@ -1,0 +1,66 @@
+openapi: 3.2.0
+info:
+  title: AirCube Models API
+  version: '2026-09-25'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-25: 4 operation(s) read from 12 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; AirCube has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 13
+    documentation: -9
+    pages-with-code: 12
+    pages-read: 12
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-25'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://aircube.ai/docs/guides/reference-media
+  - https://aircube.ai/docs/api-reference/face-swap
+  - https://aircube.ai/docs/api-reference/get-result
+  - https://aircube.ai/docs/api-reference/moderation
+  - https://aircube.ai/docs/api-reference/list-models
+  - https://aircube.ai/docs/api-reference/submit-generation
+  - https://aircube.ai/docs
+  - https://aircube.ai/docs/guides/face-swap-guide
+  - https://aircube.ai/docs/guides/audio-generation
+  - https://aircube.ai/docs/guides/image-generation
+  - https://aircube.ai/docs/guides/video-generation
+  - https://aircube.ai/docs/getting-started/quickstart
+security:
+- bearer: []
+tags:
+- name: Models
+paths:
+  /api/v3/models:
+    get:
+      operationId: get_api_v3_models
+      tags:
+      - Models
+      summary: GET /api/v3/models
+      x-source: https://aircube.ai/docs/api-reference/list-models
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl https://aircube.ai/api/v3/models  -H \"Authorization: Bearer $AIRCUBE_API_KEY \" \n Python — find all video models \n import os \n import requests \n API_KEY = os.environ[ \"AIRCUBE_API_KEY\" ] \n response = requests.get( \n \"https://aircube.ai/api/v3/models\" , \n headers = { \"Authorization\" : f \"Bearer {API_KEY} \" }, \n ) \n models = response.json()[ \"data\" ] "
+  /models:
+    get:
+      operationId: get_models
+      tags:
+      - Models
+      summary: Submit Generation
+      description: List Models – Discover all available AI models, their supported tasks, and starting prices.
+      x-source: https://aircube.ai/docs/api-reference/submit-generation
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
