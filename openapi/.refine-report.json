@@ -19,7 +19,11 @@
     "aircube-openapi-generated.yml: tagged paths POST /api/v3/{v3id} -> AirCube API",
     "aircube-openapi-generated.yml: declared missing tag: AirCube API",
     "aircube-openapi-generated.yml: declared missing tag: Qwen Image",
-    "apis.yml register: written (+3 apis, 4 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "aircube-aircube-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "aircube-models-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "aircube-qwen-image-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
