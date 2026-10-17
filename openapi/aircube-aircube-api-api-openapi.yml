@@ -65,19 +65,19 @@ paths:
         collapsed_from: 2 example path(s) differing only at v3Id
 components:
   schemas:
-    PostApiV3V3IdResponse:
-      type: object
-      properties:
-        text:
-          type: string
-        policy:
-          type: string
     PostApiV3V3IdRequest:
       type: object
       properties:
         source_face_url:
           type: string
         target_media:
+          type: string
+    PostApiV3V3IdResponse:
+      type: object
+      properties:
+        text:
+          type: string
+        policy:
           type: string
   securitySchemes:
     bearer:
