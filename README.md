@@ -64,5 +64,121 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AirCube is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://aircube.ai/
+AirCube provides a unified API platform that gives developers access to over 450 AI models across image, video, audio, and text domains. Through a single REST endpoint and API key, users can generate media, synthesize speech, and run advanced model inference without managing multiple vendor integrations. The service offers free tier access, transparent usage‑based pricing, and enterprise features such as high‑availability scaling and dedicated support.
+
+**Areas:** Artificial Intelligence · Platform · Media Generation · Unified API
+
+## AirCube on APIs.io
+
+Everything profiled for AirCube is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aircube/](https://apis.io/providers/aircube/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [AirCube API](https://apis.io/apis/aircube/aircube-api-2/) — Unified REST API for AI model generation, image, video, audio, and text. Provides endpoints for model listing, generation submission, result polling, face…
+- [AirCube AirCube API](https://apis.io/apis/aircube/aircube-aircube-api-api/) — The AirCube API API from AirCube — 1 operation(s) for aircube api.
+- [AirCube Models API](https://apis.io/apis/aircube/aircube-models-api/) — The Models API from AirCube — 2 operation(s) for models.
+- [AirCube Qwen Image API](https://apis.io/apis/aircube/aircube-qwen-image-api/) — The Qwen Image API from AirCube — 1 operation(s) for qwen image.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (3)
+
+The data models the API reads and writes.
+
+- [PostApiV3QwenImageEdit2511ImageEditingRequest](https://apis.io/schemas/aircube/aircube-post-api-v3-qwen-image-edit2511-image-editing-request/)
+- [PostApiV3V3IdRequest](https://apis.io/schemas/aircube/aircube-post-api-v3-v3-id-request/)
+- [PostApiV3V3IdResponse](https://apis.io/schemas/aircube/aircube-post-api-v3-v3-id-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Aircube Context](https://apis.io/jsonld/aircube/aircube-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [AirCube API Rules](https://apis.io/rules/aircube/aircube-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aircube Authentication](https://apis.io/security/aircube/aircube-authentication/)
+- [Aircube Domain Security](https://apis.io/security/aircube/aircube-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aircube Plans Pricing](https://apis.io/plans/aircube/aircube-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aircube.ai/)
+- [Documentation](https://aircube.ai/docs)
+- [Getting started](https://aircube.ai/docs/getting-started/overview)
+- [API reference](https://aircube.ai/docs/api-reference/submit-generation)
+- [Pricing](https://aircube.ai/pricing)
+- [Sign up](https://aircube.ai/login)
+- [Blog](https://aircube.ai/blog)
+- [Terms of service](https://aircube.ai/legal/terms)
+- [Privacy policy](https://aircube.ai/legal/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 38.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 20.3 |
+| Contract governance | 22.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 65.8 |
+
+**Agent readiness 20.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aircube/](https://apis.io/providers/aircube/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AirCube: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aircube/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
