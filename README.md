@@ -107,14 +107,14 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Aircube Authentication](https://apis.io/security/aircube/aircube-authentication/)
-- [Aircube Domain Security](https://apis.io/security/aircube/aircube-domain-security/)
+- [AirCube Authentication](https://apis.io/security/aircube/aircube-authentication/)
+- [AirCube Domain Security](https://apis.io/security/aircube/aircube-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Aircube Plans Pricing](https://apis.io/plans/aircube/aircube-plans-pricing/)
+- [AirCube Plans Pricing](https://apis.io/plans/aircube/aircube-plans-pricing/)
 
 ## Where to find this API
 
@@ -132,7 +132,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 38.7** — thin · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 38.4** — thin · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
@@ -141,9 +141,9 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Contract governance | 22.0 |
 | Operational transparency | 0.0 |
 | Developer ergonomics | 52.4 |
-| Access clarity | 65.8 |
+| Access clarity | 68.1 |
 
-**Agent readiness 20.9** — agent-aware
+**Agent readiness 22.1** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -166,8 +166,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 17.3** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aircube/](https://apis.io/providers/aircube/).
 
